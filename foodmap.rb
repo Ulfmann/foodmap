@@ -1,5 +1,7 @@
 require 'sinatra'
 
-get '/' do
-  'Welcome to Foodmap'
+class Foodmap < Sinatra::Base
+  get '/' do
+    'Welcome to Foodmap'
+  end
 end
