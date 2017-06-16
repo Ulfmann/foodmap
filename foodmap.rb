@@ -2,6 +2,6 @@ require 'sinatra'
 
 class Foodmap < Sinatra::Base
   get '/' do
-    send_file 'views/foodmap.html'
+    haml :foodmap
   end
 end

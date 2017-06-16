@@ -1,0 +1,21 @@
+!!!
+%html
+  %head
+    %title Simple Map
+    :css
+      /* Always set the map height explicitly to define the size of the div
+        * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+  %body
+    #map
+    %script{type: 'text/javascript', src: 'map.js'}
+    %script{src: 'https://maps.googleapis.com/maps/api/js?key=AIzaSyD4v4MZyzNKjXx6EoVAe0k-9y4mNjLCq3I&callback=initMap'}
